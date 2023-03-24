@@ -3,7 +3,13 @@ const cors = require('cors')
 const app = express()
 const port = 3000
 
-app.use(cors())
+const corsOptions ={
+  origin:'http://localhost:3000', 
+  credentials:true, 
+  optionSuccessStatus:200
+}
+
+app.use(cors(corsOptions))
 
 app.get('/', (req, res) => {
   res.send(
