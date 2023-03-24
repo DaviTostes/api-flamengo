@@ -2,6 +2,15 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+app.use((req, res, next) => {
+  res.setHeader('Acess-Control-Allow-Origin', "*")
+  res.header(
+    "Acess-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  )
+  next()
+})
+
 app.get('/', (req, res) => {
   res.send(
     {
