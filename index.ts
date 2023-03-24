@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
   res.send(
     {
       "Campeonato Brasileiro": [    "1980",    "1982",    "1983",    "1987",    "1992",    "2009",    "2019",    "2020"  ],
-      "Copa do Brasil": [    "1990",    "2006",    "2013",    "2019"  ],
+      "Copa do Brasil": [    "1990",    "2006",    "2013",    "2019",  "2022"  ],
       "Copa Libertadores da América": [    "1981",    "2019",    "2022"  ],
       "Supercopa do Brasil": [    "2020"  ],
       "Recopa Sul-Americana": [    "2020"  ],
